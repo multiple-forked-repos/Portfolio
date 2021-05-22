@@ -1,0 +1,6 @@
+{
+    "liveServer.settings.port": 5501,
+    "editor.fontFamily": "'Lato', 'Courier New', monospace",
+    "diffEditor.wordWrap": "on",
+    "editor.minimap.maxColumn": 70
+}
