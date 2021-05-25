@@ -70,24 +70,35 @@
     padding: 30px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 180px;
+    gap: 150px;
 }
 
 .proyectos__card {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
     height: 310px;
     border-radius: 5px;
     background: #fff;
 }
 
 .card__title--project {
-    font-size: 35px;
-    padding:10px;
+    font-size: 30px;
+    padding: 15px 0 0 10px;
     border-bottom: 1px solid var(--color-oscuro);
+    font-family: 'PT Mono', monospace;
+}
+
+.card__technology {
+    font-size: 20px;
+    padding: 20px 0 0 20px;
+    font-family: 'PT Mono', monospace;
+    font-weight: 300;
 }
 
 .card__cta {
-    padding: 20px;
     width: 100%;
+    text-align: end;
+    margin-top: 20px;
 }
 
 .card__btn {
@@ -95,16 +106,18 @@
     border-radius: 50%;
     padding: 10px;
     cursor: pointer;
+    margin-right: 5px;
 }
 
 .btn__visitar {
-    color: var(--azul-secundario);
-    border:1px solid var(--azul-secundario);
+    color: var(--principal-color);
+    border:1px solid var(--principal-color);
 }
 
 .btn__github {
-    color: var(--principal-color);
-    border:1px solid var(--principal-color)
+    color: var(--azul-secundario);
+    border:1px solid var(--azul-secundario);
+    margin-right: 20px;
 }
 
 .redes__container {
