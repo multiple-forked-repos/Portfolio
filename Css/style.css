@@ -1,7 +1,10 @@
 * {
     margin: 0;
+    text-decoration: none;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --principal-color: #486F8C;
     --azul-secundario: #2C456B;
