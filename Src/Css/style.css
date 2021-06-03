@@ -1,10 +1,13 @@
 * {
     margin: 0;
     text-decoration: none;
-}
-html {
     scroll-behavior: smooth;
 }
+
+body {
+    background-color: var(--azul-secundario);
+}
+
 :root {
     --principal-color: #486F8C;
     --azul-secundario: #2C456B;
@@ -88,13 +91,11 @@ html {
     font-size: 30px;
     padding: 15px 0 0 10px;
     border-bottom: 1px solid var(--color-oscuro);
-    font-family: 'PT Mono', monospace;
 }
 
 .card__technology {
     font-size: 20px;
     padding: 20px 0 0 20px;
-    font-family: 'PT Mono', monospace;
     font-weight: 300;
 }
 
@@ -128,7 +129,7 @@ html {
     position: fixed;
     bottom: 0;
     text-align: center;
-    background: var(--principal-color);
+    background-image: var(--principal-color);
 }
 
 .redes {
@@ -136,4 +137,52 @@ html {
     font-size: 30px;
     color: #fff;
     text-decoration: none;
+}
+
+.contact {
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #486f8c57;
+}
+
+.contact__input {
+    width: 95%;
+    display: block;
+    margin: 10px auto 30px;
+    padding: 15px 10px;
+    outline: none;
+    border: 1px solid #eee;
+    background-color: var(--color-oscuro);
+    color: #eee;
+    font-size: 16px;
+}
+
+.contact__input::placeholder {
+    color: #eee;
+    margin-right: 10px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.contact__input--message {
+    position: relative;
+    height: 150px;
+}
+
+.contact__input--message::placeholder {
+    position: absolute;
+    top: 0;
+    margin-top: -100px;
+}
+
+.contact__submit {
+    background-color: var(--principal-color);
+    outline: none;
+    border: 1px solid #eee;
+    padding: 10px 35px;
+    align-items: center;
+    color: #eee;
+    cursor: pointer;
 }

@@ -9,10 +9,9 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Vincular Css -->
-    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="./Src/Css/style.css">
     <!-- Fonts Family -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
     <section class="navbar-header">
@@ -30,38 +29,46 @@
         <p class="sobremi__description"></p>
     </section>
 
-    <section id="proyectos" class="proyectos">
+    <section id="proyectos" class="proyectos" aria-label="Portafolio">
     <div class="proyectos--width">
         <div class="proyectos__card">
             <h2 class="card__title--project">Motorbike Sistem</h2>
             <h3 class="card__technology">HTML, Css y JS</h3>
             <div class="card__cta">
-                <a href="https://matiasblanc.github.io/motorbike-sistem/"><li class="card__btn btn__visitar fas fa-external-link-alt"></li></a>
-                <a href="https://github.com/MatiasBlanc/motorbike-sistem"><li class="card__btn btn__github fab fa-github-alt"></li></a>
+                <a href="https://matiasblanc.github.io/motorbike-sistem/" target="_blank"><li class="card__btn btn__visitar fas fa-external-link-alt" title="Visitar"></li></a>
+                <a href="https://github.com/MatiasBlanc/motorbike-sistem" target="_blank"><li class="card__btn btn__github fab fa-github-alt" title="Repositorio"></li></a>
             </div>
         </div>
         <div class="proyectos__card">
             <h2 class="card__title--project">Peso Planetastico</h2>
             <h3 class="card__technology">HTML, Css y JS</h3>
             <div class="card__cta">
-                <a href="https://matiasblanc.github.io/Peso-Planetastico/"><li class="card__btn btn__visitar fas fa-external-link-alt"></li></a>
-                <a href="https://github.com/MatiasBlanc/Peso-Planetastico"><li class="card__btn btn__github fab fa-github-alt"></li></a>
+                <a href="https://matiasblanc.github.io/Peso-Planetastico/" target="_blank"><li class="card__btn btn__visitar fas fa-external-link-alt" title="Visitar"></li></a>
+                <a href="https://github.com/MatiasBlanc/Peso-Planetastico" target="_blank"><li class="card__btn btn__github fab fa-github-alt" title="Repositorio"></li></a>
             </div>
         </div>
         <div class="proyectos__card">
             <h2 class="card__title--project">lorem ipsum</h2>
             <h3 class="card__technology">React</h3>
             <div class="card__cta">
-                <li class="card__btn btn__visitar fas fa-external-link-alt"></li>
-                <li class="card__btn btn__github fab fa-github-alt"></li>
+                <li class="card__btn btn__visitar fas fa-external-link-alt" title="Visitar"></li>
+                <li class="card__btn btn__github fab fa-github-alt" title="Repositorio"></li>
             </div>
         </div>
-    </section>
+    </section> 
+    <!--  -->
+    <form action="https://formspree.io/f/xayaolla" method="POST" class="contact" id="formContainer">
+        <input class="contact__input" type="text" id="userName" placeholder="Nombre" maxlength="28" name="nombre" autocomplete="off">
+        <input class="contact__input" type="email" id="adressEmail" placeholder="Correo Electronico" name="email" required>
+        <input class="contact__input contact__input--message" type="text" id="message" placeholder="Mensaje" name="mensaje" maxlength="500" required autocomplete="off">
+        <input class="contact__submit" type="submit" id="btn" name="btn" value="Enviar">
+    </form>
     <!-- <section class="redes__container">
         <a href="" class="fab fa-twitter redes"></a>
         <a href="" class="fab fa-instagram redes"></a>
         <a href="" class="fab fa-discord redes"></a>
     </div>
     </section> -->
-</body>
+    <script src="Src/Js/contact.js"></script>
+</body> 
 </html>
