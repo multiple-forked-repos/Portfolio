@@ -8,19 +8,21 @@
     <title>Matias Blanc</title>
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <!-- Vincular Css -->
-    <link rel="stylesheet" href="./Src/Css/style.css">
     <!-- Fonts Family -->
+    <!-- TE FALTA EL LINK DE LA FUENTE -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- Vincular Css -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <section class="navbar-header">
-        <img src="Assets/Logos/Sendero_Tecnologico-negro.png" alt="" class="navbar__img">
+        <img src="./assets/logos/Sendero_Tecnologico-negro.png" alt="" class="navbar__img">
         <ul class="navbar-right">
             <a href="#inicio"><li class="nav">Inicio</li></a>
             <a href="#sobremi"><li class="nav">Sobre Mi</li></a>
             <a href="#proyectos"><li class="nav">Proyectos</li></a>
-            <a href="#contacto"><li class="nav">Contacto</li></a>
+            <!-- AQUÍ TENÍAS MAL EL ID DEL FORMULARIO -->
+            <a href="#formContainer"><li class="nav">Contacto</li></a>
         </ul>
     </section>
     <section id="sobremi" class="sobremi">
@@ -60,7 +62,7 @@
     <form action="https://formspree.io/f/xayaolla" method="POST" class="contact" id="formContainer">
         <input class="contact__input" type="text" id="userName" placeholder="Nombre" maxlength="28" name="nombre" autocomplete="off">
         <input class="contact__input" type="email" id="adressEmail" placeholder="Correo Electronico" name="email" required>
-        <input class="contact__input contact__input--message" type="text" id="message" placeholder="Mensaje" name="mensaje" maxlength="500" required autocomplete="off">
+        <textarea name="mensaje" id="message" class="contact__input contact__input--message" placeholder="Hola" maxlength="500" required autocomplete="off"></textarea>
         <input class="contact__submit" type="submit" id="btn" name="btn" value="Enviar">
     </form>
     <!-- <section class="redes__container">
@@ -69,6 +71,6 @@
         <a href="" class="fab fa-discord redes"></a>
     </div>
     </section> -->
-    <script src="Src/Js/contact.js"></script>
+    <script src="./js/contact.js"></script>
 </body> 
 </html>

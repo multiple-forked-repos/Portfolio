@@ -1,17 +1,23 @@
-* {
-    margin: 0;
-    text-decoration: none;
-    scroll-behavior: smooth;
-}
-
-body {
-    background-color: var(--azul-secundario);
-}
-
 :root {
     --principal-color: #486F8C;
     --azul-secundario: #2C456B;
     --color-oscuro:#3D3F40;
+}
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--azul-secundario);
+}
+a{
+    text-decoration: none;
 }
 
 .navbar-header {
@@ -167,20 +173,14 @@ body {
 }
 
 .contact__input--message {
-    position: relative;
-    height: 150px;
-}
-
-.contact__input--message::placeholder {
-    position: absolute;
-    top: 0;
-    margin-top: -100px;
+    font-family: inherit;
 }
 
 .contact__submit {
     background-color: var(--principal-color);
     outline: none;
     border: 1px solid #eee;
+    margin-left: 10px; /* Esto lo deja alineado con los demás elementos */
     padding: 10px 35px;
     align-items: center;
     color: #eee;
